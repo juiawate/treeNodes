@@ -1,0 +1,11 @@
+* {
+    font: 200 1em 'Helvetica Neue';
+    color: gray;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}

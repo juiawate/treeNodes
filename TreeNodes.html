@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="TreeApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tree Structure</title>
+    <link rel="stylesheet" href="treeStyle.css"/>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="nodes.js"></script>
+</head>
+<body ng-controller="treeController">
+    <button ng-click="exportToJson()">Export to JSON</button>
+    <button ng-click="loadFromJson()">Load from JSON</button>
+    <button ng-click="saveToLocal()">Save to local</button>
+    <button ng-click="loadFromLocal()">Load from local</button>
+
+    <div ng-include="'nodeTemplate.html'"></div>
+</body>
+</html>
