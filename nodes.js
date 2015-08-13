@@ -16,7 +16,7 @@ angular.module('TreeApp',[]).controller('treeController',['$scope', function ($s
 
     /*$scope.$watch('node.showInputBox', function () {
         //console.log(this);
-        $scope.plus = $scope.nodes.showInputBox ? '[-]' : '[+]';
+        $scope.plus = $scope.plus === '[+]' ? '[-]' : '[+]';
     });*/
 
     $scope.status = {};

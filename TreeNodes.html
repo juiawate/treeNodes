@@ -5,7 +5,7 @@
     <title>Tree Structure</title>
     <link rel="stylesheet" href="treeStyle.css"/>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="nodes.js"></script>
+
 </head>
 <body ng-controller="treeController">
     <button ng-click="exportToJson()">Export to JSON</button>
@@ -20,5 +20,7 @@
     <ul>
         <li ng-repeat="node in nodes" ng-include="'nodeTemplate.html'"></li>
     </ul>
+
+    <script src="nodes.js"></script>
 </body>
 </html>
