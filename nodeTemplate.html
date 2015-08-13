@@ -1,9 +1,18 @@
-<ul>
-    <li ng-repeat="tree in trees">
-    <div>
-        <span ng-model="parent">{{tree.label}}</span> <a href="" ng-click="node.showInputBox = !node.showInputBox">{{plus}}</a><br>
-        <input type="text" ng-model="node.child" ng-show="node.showInputBox" ng-enter="addNewNode(parent)"/>
 
-    </div>
+<span>{{node.label}}</span> <a href="" ng-click="node.showInputBox = !node.showInputBox">{{plus}}</a><br>
+<ul>
+    <li ng-repeat="node in node.children" ng-include="'nodeTemplate.html'">
     </li>
 </ul>
+<input type="text" ng-model="node.c.childEle" ng-show="showInputBoxes" ng-enter="addNewNode(node)"/>
+
+
+<!--
+<ul>
+    <li ng-repeat="child in node.children">
+    <div>
+        <span>{{child.label}}</span> <a href="" ng-click="child.showInputBox = !child.showInputBox">{{plus}}</a><br>
+        <input type="text" ng-model="c.childEle" ng-show="child.showInputBox" ng-enter="addNewNode(child)"/>
+    </div>
+    </li>
+</ul>-->

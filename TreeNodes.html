@@ -13,6 +13,12 @@
     <button ng-click="saveToLocal()">Save to local</button>
     <button ng-click="loadFromLocal()">Load from local</button>
 
-    <div ng-include="'nodeTemplate.html'"></div>
+    <div>
+        <input type="checkbox" ng-model="showInputBoxes"/>Show Input Boxes
+    </div>
+
+    <ul>
+        <li ng-repeat="node in nodes" ng-include="'nodeTemplate.html'"></li>
+    </ul>
 </body>
 </html>
